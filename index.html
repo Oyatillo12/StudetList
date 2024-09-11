@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+</head>
+<body class="site-body">
+
+    <div class="w-[475px] rounded-[20px] bg-white shadow-lg pt-[44px] px-[30px] pb-[52px] fixed inset-0 m-auto h-[550px]">
+        <h2 class="text-[32px] leading-[39px] relative font-bold border-l-[6px] border-l-[#F8D442] ml-[33px] pl-[12px]">Admin Students</h2>
+        <strong class="block mt-[43px] mb-[9px] text-[22px] leading-[26px] font-semibold text-center">Sign In</strong>
+        <p class="text-center text-[#6C6C6C] text-[14px] leading-[17px] font-normal mb-[50px]">Enter your credentials to access your account</p>
+        <form class="login-form space-y-[19px]">
+            <label class="flex flex-col justify-start space-y-[10px]">
+                <span class="text-[14px] text-[#6C6C6C] leading-[17px] font-medium">Login</span>
+                <input class="outline-none border border-[#E5E5E5] text-[12px] leading-[15px] font-normal rounded-[4px] w-full py-[14px] px-[15px]" type="text" name="userlogin" placeholder="Enter your login" required autocomplete="off">
+            </label>
+            <label class="flex flex-col justify-start space-y-[10px]">
+                <span class="text-[14px] text-[#6C6C6C] leading-[17px] font-medium">Password</span>
+                <input class="outline-none border border-[#E5E5E5] text-[12px] leading-[15px] font-normal rounded-[4px] w-full py-[14px] px-[15px]" type="password" name="userpassword" placeholder="Enter your password" required autocomplete="off">
+            </label>
+            <button type="submit" class="w-full block mt-[16px] bg-[#FEAF00] rounded-[4px] text-white font-medium text-[14px] leading-[17px] py-[14px]">SIGN IN</button>
+        </form>
+        <a href="./register.html" class="text-[14px] block mt-[11px] hover:text-[#FEAF00] duration-300 leading-[17px] font-normal text-center">Sign up</a>
+   </div>
+    
+
+    <script src="./js/admin/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
